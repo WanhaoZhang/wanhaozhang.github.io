@@ -1,9 +1,9 @@
+https://vanhopex.github.io/about/index.html
 https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/
 https://vanhopex.github.io/articles/2022/11/22/certificate-work-record/
 https://vanhopex.github.io/articles/2022/10/19/focus-on-one-thing-over-a-period-time/
 https://vanhopex.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/
 https://vanhopex.github.io/essay/index.html
-https://vanhopex.github.io/about/index.html
 https://vanhopex.github.io/
 https://vanhopex.github.io/tags/hexo/
 https://vanhopex.github.io/tags/hexo-github%E5%BB%BA%E8%AE%BE%E4%B8%AA%E4%BA%BAblog/

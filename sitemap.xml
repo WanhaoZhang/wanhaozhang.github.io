@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vanhopex.github.io/about/index.html</loc>
+    
+    <lastmod>2023-10-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/</loc>
     
     <lastmod>2023-08-11</lastmod>
@@ -41,15 +50,6 @@
     <loc>https://vanhopex.github.io/essay/index.html</loc>
     
     <lastmod>2022-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vanhopex.github.io/about/index.html</loc>
-    
-    <lastmod>2022-10-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
