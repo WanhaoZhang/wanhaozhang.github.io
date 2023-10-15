@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://vanhopex.github.io/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/fig3.png">
 <meta property="og:image" content="https://vanhopex.github.io/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/drain.png">
 <meta property="article:published_time" content="2023-10-15T09:12:36.000Z">
-<meta property="article:modified_time" content="2023-10-15T14:36:16.461Z">
+<meta property="article:modified_time" content="2023-10-15T14:36:46.239Z">
 <meta property="article:author" content="VANHOPEX">
 <meta property="article:tag" content="日志异常检测">
 <meta property="article:tag" content="科研">
@@ -331,7 +331,7 @@
 <li>然后TDA接收每个日志窗户的日志，并将其作为输入，为窗口内的每一条日志都生成一个异常分数。</li>
 <li>在这个过程中TDA识别异常日志，然后把它们推送给专家模块来进一步确认，专家会反馈结果给TDA。 专家可以采取多种形式：一个on-call的工程师、包含多种规则的知识库、一个大语言模型</li>
 </ol>
-<h2 id="TDA的工作流程"><a href="#TDA的工作流程" class="headerlink" title="TDA的工作流程"></a>TDA的工作流程</h2><p><img src="/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/fig3.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="TDA的工作流程"><a href="#TDA的工作流程" class="headerlink" title="TDA的工作流程"></a>TDA的工作流程</h2><p><img src="/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/fig3.png" srcset="/img/loading.gif" lazyload>{:height&#x3D;”60%” width&#x3D;”60%”}</p>
 <p>TDA的输入是：日志信息，输出：每条日志的异常得分</p>
 <p>TDA包括五个步骤：日志预处理、内部节点遍历、叶子节点更新、trie更新、异常检测</p>
 <ol>
@@ -369,7 +369,7 @@
 <p>使用KDD17paper（Anomaly Detection in Streams with Extreme Value Theory）中的GEV分布，首先得到每个日志集群块对应模板的GEV的累计分布函数值$f(x_i)$，然后根据所有日志模板的f值，求每个模板对应的异常分数，具体来说对每个日志模板对应的f值，首先计算所有分数t次方的总和 sum，然后用 该模板的 $f(x_i)^t &#x2F; sum$，就是该模板的异常分数。</p>
 <p>当处理大量日志模板时，在拟合 GEV 分布时，整个日志簇集的计算成本可能会很高。为了解决这个问题，我们建议使用最近最少使用（LRU）策略来限制用于拟合分布的日志模板的数量。 LRU 策略维护最近看到的日志模板的缓存，并在缓存大小达到用户定义的大小 R（如公式 2 中使用）时丢弃最近最少使用的模板。 LRU 策略基于这样的观察：通常在较短的时间间隔（例如十分钟）内仅生成一小部分日志消息。因此，我们可以关注最近看到的日志模板，这些模板可能与该时间间隔内的异常检测相关。</p>
 <h2 id="专家模块的工作流程"><a href="#专家模块的工作流程" class="headerlink" title="专家模块的工作流程"></a>专家模块的工作流程</h2><p>比较简单，上面的异常分数大于某个阈值，就交给专家处理</p>
-<h2 id="ScaleAD和日志解析器Drain的关系"><a href="#ScaleAD和日志解析器Drain的关系" class="headerlink" title="ScaleAD和日志解析器Drain的关系"></a>ScaleAD和日志解析器Drain的关系</h2><p><img src="/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/drain.png" srcset="/img/loading.gif" lazyload alt="Drain的结构">{:height&#x3D;”50%” width&#x3D;”50%”}</p>
+<h2 id="ScaleAD和日志解析器Drain的关系"><a href="#ScaleAD和日志解析器Drain的关系" class="headerlink" title="ScaleAD和日志解析器Drain的关系"></a>ScaleAD和日志解析器Drain的关系</h2><p><img src="/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/drain.png" srcset="/img/loading.gif" lazyload alt="Drain的结构">{:height&#x3D;”60%” width&#x3D;”60%”}</p>
 <p>Drain是2017年的一篇关于日志解析的文章：Drain: An Online Log Parsing Approach with Fixed Depth Tree</p>
 <p>翻译的文章<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/627345347">在这里</a></p>
 <p>可以看到，ScaleAD类似于Drain的结构，只有几点不同</p>
