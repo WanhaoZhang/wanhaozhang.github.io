@@ -19,18 +19,18 @@
     <meta name="description" content="课程主页：https:&#x2F;&#x2F;tai-e.pascal-lab.net&#x2F;lectures.html 数据流分析数据流分析指的是一种用来获取有关数据如何沿着程序执行路径流动的相关技术，许多编译优化技术都依赖于数据流分析。 数据流分析有很多经典的应用，比如  到达定值分析 活跃变量分析 可用表达式分析  活跃变量分析原理活跃变量分析（Live Variable Analysis）是数据流分析的一个经典应用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="软件分析课程实验-A1-活跃变量分析和迭代求解器">
-<meta property="og:url" content="https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/index.html">
+<meta property="og:url" content="https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/index.html">
 <meta property="og:site_name" content="VANHOPEX">
 <meta property="og:description" content="课程主页：https:&#x2F;&#x2F;tai-e.pascal-lab.net&#x2F;lectures.html 数据流分析数据流分析指的是一种用来获取有关数据如何沿着程序执行路径流动的相关技术，许多编译优化技术都依赖于数据流分析。 数据流分析有很多经典的应用，比如  到达定值分析 活跃变量分析 可用表达式分析  活跃变量分析原理活跃变量分析（Live Variable Analysis）是数据流分析的一个经典应用">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/fig2.jpg">
-<meta property="og:image" content="https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/fig3.jpg">
-<meta property="og:image" content="https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/iter-alg.png">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/fig2.jpg">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/fig3.jpg">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/iter-alg.png">
 <meta property="article:published_time" content="2022-11-20T10:11:15.000Z">
 <meta property="article:modified_time" content="2023-08-11T07:51:16.056Z">
 <meta property="article:author" content="VANHOPEX">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/fig2.jpg">
+<meta name="twitter:image" content="https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/fig2.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -69,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"vanhopex.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"jIYN7fOAGYcILmtw9jdVm3yr-gzGzoHsz","app_key":"hyDzLdFo2eVYdVE7ZSxw53fF","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"wanhaozhang.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"jIYN7fOAGYcILmtw9jdVm3yr-gzGzoHsz","app_key":"hyDzLdFo2eVYdVE7ZSxw53fF","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -425,7 +425,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>软件分析课程实验-A1-活跃变量分析和迭代求解器</div>
-      <div>https://vanhopex.github.io/articles/2022/11/20/static-analysis-A1/</div>
+      <div>https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/</div>
     </div>
     <div class="license-meta">
       
