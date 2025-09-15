@@ -38,7 +38,7 @@
     
     <categories>
       
-      <category>论文总结</category>
+      <category>日志异常检测</category>
       
     </categories>
     
@@ -46,8 +46,6 @@
     <tags>
       
       <tag>日志异常检测</tag>
-      
-      <tag>科研</tag>
       
     </tags>
     
@@ -100,25 +98,6 @@
   
   
   <entry>
-    <title>少就是多，慢就是快</title>
-    <link href="/articles/2022/10/19/focus-on-one-thing-over-a-period-time/"/>
-    <url>/articles/2022/10/19/focus-on-one-thing-over-a-period-time/</url>
-    
-    <content type="html"><![CDATA[<h2 id="“少就是多，慢就是快”"><a href="#“少就是多，慢就是快”" class="headerlink" title="“少就是多，慢就是快”"></a>“少就是多，慢就是快”</h2><blockquote><p> 我很喜欢这几个字。 这几个字很容易理解，但我还是解释一下：一个时间范围内，不要贪心搞很多事情，专注一个方向，足够的付出，结果自然会很”快”和很“多”。</p><p>摘抄自：<a href="https://github.com/zhuifengshaonianhanlu/pikachu">https://github.com/zhuifengshaonianhanlu/pikachu</a></p></blockquote>]]></content>
-    
-    
-    <categories>
-      
-      <category>摘抄</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>github+hexo博客上传图片无法显示</title>
     <link href="/articles/2022/10/17/how-to-upload-image-to-github-io/"/>
     <url>/articles/2022/10/17/how-to-upload-image-to-github-io/</url>
@@ -136,8 +115,6 @@
     <tags>
       
       <tag>hexo</tag>
-      
-      <tag>hexo+github建设个人blog</tag>
       
     </tags>
     

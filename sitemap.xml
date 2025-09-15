@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wanhaozhang.github.io/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</loc>
+    
+    <lastmod>2025-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/</loc>
+    
+    <lastmod>2025-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2025-09-15</lastmod>
@@ -20,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://wanhaozhang.github.io/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</loc>
-    
-    <lastmod>2023-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://wanhaozhang.github.io/articles/2022/11/22/certificate-work-record/</loc>
     
     <lastmod>2023-10-12</lastmod>
@@ -39,24 +48,6 @@
   
   <url>
     <loc>https://wanhaozhang.github.io/articles/2022/11/20/static-analysis-A1/</loc>
-    
-    <lastmod>2023-08-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanhaozhang.github.io/articles/2022/10/19/focus-on-one-thing-over-a-period-time/</loc>
-    
-    <lastmod>2023-08-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/</loc>
     
     <lastmod>2023-08-11</lastmod>
     
@@ -83,20 +74,6 @@
 
   
   <url>
-    <loc>https://wanhaozhang.github.io/tags/hexo/</loc>
-    <lastmod>2025-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanhaozhang.github.io/tags/hexo-github%E5%BB%BA%E8%AE%BE%E4%B8%AA%E4%BA%BAblog/</loc>
-    <lastmod>2025-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wanhaozhang.github.io/tags/%E8%AF%81%E4%B9%A6%E6%9C%BA%E5%88%B6/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -104,14 +81,14 @@
   </url>
   
   <url>
-    <loc>https://wanhaozhang.github.io/tags/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://wanhaozhang.github.io/tags/hexo/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://wanhaozhang.github.io/tags/%E7%A7%91%E7%A0%94/</loc>
+    <loc>https://wanhaozhang.github.io/tags/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -127,20 +104,6 @@
 
   
   <url>
-    <loc>https://wanhaozhang.github.io/categories/%E6%9D%82%E9%A1%B9/</loc>
-    <lastmod>2025-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://wanhaozhang.github.io/categories/%E6%91%98%E6%8A%84/</loc>
-    <lastmod>2025-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://wanhaozhang.github.io/categories/%E9%9D%99%E6%80%81%E7%A8%8B%E5%BA%8F%E5%88%86%E6%9E%90/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -148,7 +111,14 @@
   </url>
   
   <url>
-    <loc>https://wanhaozhang.github.io/categories/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://wanhaozhang.github.io/categories/%E6%9D%82%E9%A1%B9/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://wanhaozhang.github.io/categories/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
