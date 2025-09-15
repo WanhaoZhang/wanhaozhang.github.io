@@ -16,27 +16,28 @@
   <meta name="author" content="VANHOPEX">
   <meta name="keywords" content="">
   
-    <meta name="description" content="SR协议学习SR协议SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用MPLS标签转发，SRv6使用IPv6报文转发。  segment就是标签，segment 列表就是标签栈  RSVP-TE一般通过网络工程或者流量工程来提供SLA  网络工程就是设计网络来满足业务流量需求 流量工程就是让特定流量按照网络优化目标进行转发网络工">
+    <meta name="description" content="SR协议SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用MPLS标签转发，SRv6使用IPv6报文转发。  segment就是标签，segment 列表就是标签栈  RSVP-TE一般通过网络工程或者流量工程来提供SLA  网络工程就是设计网络来满足业务流量需求 流量工程就是让特定流量按照网络优化目标进行转发网络工程就是从硬件">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VANHOPEX">
-<meta property="og:url" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="SR Policy学习">
+<meta property="og:url" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="VANHOPEX">
-<meta property="og:description" content="SR协议学习SR协议SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用MPLS标签转发，SRv6使用IPv6报文转发。  segment就是标签，segment 列表就是标签栈  RSVP-TE一般通过网络工程或者流量工程来提供SLA  网络工程就是设计网络来满足业务流量需求 流量工程就是让特定流量按照网络优化目标进行转发网络工">
+<meta property="og:description" content="SR协议SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用MPLS标签转发，SRv6使用IPv6报文转发。  segment就是标签，segment 列表就是标签栈  RSVP-TE一般通过网络工程或者流量工程来提供SLA  网络工程就是设计网络来满足业务流量需求 流量工程就是让特定流量按照网络优化目标进行转发网络工程就是从硬件">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image.png">
-<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image-1.png">
-<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image-2.png">
-<meta property="article:published_time" content="2025-09-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-15T16:49:40.762Z">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image.png">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image-1.png">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image-2.png">
+<meta property="article:published_time" content="2025-09-15T16:37:11.000Z">
+<meta property="article:modified_time" content="2025-09-15T17:06:21.735Z">
 <meta property="article:author" content="VANHOPEX">
+<meta property="article:tag" content="SR Policy">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image.png">
+<meta name="twitter:image" content="https://wanhaozhang.github.io/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>VANHOPEX</title>
+  <title>SR Policy学习 - VANHOPEX</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="SR Policy学习"></span>
           
         </div>
 
@@ -229,7 +230,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-09-16 00:00" pubdate>
+        <time datetime="2025-09-16 00:37" pubdate>
           2025年9月16日 凌晨
         </time>
       </span>
@@ -252,7 +253,7 @@
         
         
         
-          34 分钟
+          33 分钟
         
       </span>
     
@@ -298,7 +299,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none"></h1>
+            <h1 style="display: none">SR Policy学习</h1>
             
               <p class="note note-info">
                 
@@ -311,7 +312,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="SR协议学习"><a href="#SR协议学习" class="headerlink" title="SR协议学习"></a>SR协议学习</h1><h2 id="SR协议"><a href="#SR协议" class="headerlink" title="SR协议"></a>SR协议</h2><p>SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用<strong>MPLS标签</strong>转发，SRv6使用<strong>IPv6报文</strong>转发。</p>
+                <h2 id="SR协议"><a href="#SR协议" class="headerlink" title="SR协议"></a>SR协议</h2><p>SR技术可以分为两种：SR-MPLS和SRv6，控制层面实现方式类似；转发层面思想相同，转发方式不同，SR-MPLS使用<strong>MPLS标签</strong>转发，SRv6使用<strong>IPv6报文</strong>转发。</p>
 <ul>
 <li>segment就是标签，segment 列表就是标签栈</li>
 </ul>
@@ -362,7 +363,7 @@
 <li>Segment列表：表示的是活动路径的Segment列表，<strong>每条候选路径有一个或者多个候选Segment列表</strong>，每个Segment列表有关联的负载均衡权重。作用就是，当流量引导到这条路径之后，可以根据不同的候选Segment列表的权重进行负载均衡。 </li>
 <li>在SR-MPLS中，Segment是MPLS标签，Segment列表是MPLS标签栈</li>
 </ol>
-<p><img src="/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
+<p><img src="/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
 <h4 id="候选路径"><a href="#候选路径" class="headerlink" title="候选路径"></a>候选路径</h4><ol>
 <li>候选路径分为（1）显式候选路径、（2）动态候选路径：<ul>
 <li><p>显式候选路径是程序员或者控制器计算出候选路径，并且向头结点<strong>显式地告知要使用的路径</strong></p>
@@ -390,7 +391,7 @@
 <h3 id="SR原生算法"><a href="#SR原生算法" class="headerlink" title="SR原生算法"></a>SR原生算法</h3><ul>
 <li><strong>RSVP-TE</strong>及<strong>大多数基于隧道接口体系实现的SR-TE</strong>都是基于电路的方式计算和编码路径；而SR Policy是完全基于IP并且针对IP优化的。</li>
 </ul>
-<p><img src="/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image-1.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
+<p><img src="/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image-1.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
 <ul>
 <li>左边电路算法：采用<strong>路径沿途节点的 Adj-SID 编码路径</strong>，<strong>无法利用 IP 网络中大量存在的 ECMP</strong>，效率低下；而且 Segment 列表长，很多传统设备或者低端设备无法支持。</li>
 <li>右边的 SR 原生算法：<strong>最大化 ECMP 且最小化Segment 列表长度</strong>，因此大大提高了流量转发效率，也易于在现网部署。</li>
@@ -400,7 +401,7 @@
 <li>出口PE通告BGP业务路由时（或者入口的PE接受路由时），<strong>对路由进行着色</strong>，用于表示业务路由所需的SLA</li>
 <li><strong>头端点接收到已经着色的业务路由</strong>时，验证：**BGP路由的下一跳 (Next-Hop) + 颜色 (Color) &#x3D;&#x3D; SR Policy 的端点 (Endpoint) + 颜色 (Color)**，则BGP安装这个路由，并将其解析到SR Policy的BSID</li>
 </ul>
-<p><img src="/articles/2025/09/16/SR%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0/image-2.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
+<p><img src="/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/image-2.png" srcset="/img/loading.gif" lazyload alt="alt text"></p>
 <p>上图的具体流程：</p>
 <blockquote>
 <p>来自Gemini</p>
@@ -474,6 +475,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/" class="category-chain-item">网络协议</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/SR-Policy/">#SR Policy</a>
+      
+    </div>
   
 </div>
 
@@ -483,8 +512,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>https://wanhaozhang.github.io/articles/2025/09/16/SR协议学习/</div>
+      <div>SR Policy学习</div>
+      <div>https://wanhaozhang.github.io/articles/2025/09/16/SR Policy学习/</div>
     </div>
     <div class="license-meta">
       
