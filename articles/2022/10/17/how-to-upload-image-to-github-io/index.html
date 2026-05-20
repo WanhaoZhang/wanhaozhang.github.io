@@ -16,25 +16,25 @@
   <meta name="author" content="VANHOPEX">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文为 Pytorch的FlexAttention接入Cutlass链路分析 的完整 HTML 交互版报告。 为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开： 👉 在新窗口中打开完整报告  在线预览">
+    <meta name="description" content="github+hexo博客上传图片无法显示解决方法：用f12查看图片的链接，发现链接是带日期的，而hexo new post &quot;xxx&quot;创建的md文件都是直接放到_post里面了，所以需要修改默认生成md的位置到 年&#x2F;月&#x2F;日&#x2F;xx.md里面​​所以将_config.yml中的permalink修改为： permalink: &#39;articles&#x2F;:year&#x2F;:month&#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pytorch的FlexAttention接入Cutlass链路分析">
-<meta property="og:url" content="https://wanhaozhang.github.io/2026/05/20/Pytorch%E7%9A%84FlexAttention%E6%8E%A5%E5%85%A5Cutlass%E9%93%BE%E8%B7%AF%E5%88%86%E6%9E%90/index.html">
+<meta property="og:title" content="github+hexo博客上传图片无法显示">
+<meta property="og:url" content="https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/index.html">
 <meta property="og:site_name" content="VANHOPEX">
-<meta property="og:description" content="本文为 Pytorch的FlexAttention接入Cutlass链路分析 的完整 HTML 交互版报告。 为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开： 👉 在新窗口中打开完整报告  在线预览">
+<meta property="og:description" content="github+hexo博客上传图片无法显示解决方法：用f12查看图片的链接，发现链接是带日期的，而hexo new post &quot;xxx&quot;创建的md文件都是直接放到_post里面了，所以需要修改默认生成md的位置到 年&#x2F;月&#x2F;日&#x2F;xx.md里面​​所以将_config.yml中的permalink修改为： permalink: &#39;articles&#x2F;:year&#x2F;:month&#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-20T09:15:00.000Z">
-<meta property="article:modified_time" content="2026-05-20T12:18:55.405Z">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/image.png">
+<meta property="og:image" content="https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/image-20221017165402267.png">
+<meta property="article:published_time" content="2022-10-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-20T13:32:48.207Z">
 <meta property="article:author" content="VANHOPEX">
-<meta property="article:tag" content="FlexAttention">
-<meta property="article:tag" content="Cutlass">
-<meta property="article:tag" content="PyTorch">
-<meta property="article:tag" content="AI Compiler">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/image.png">
   
   
   
-  <title>Pytorch的FlexAttention接入Cutlass链路分析 - VANHOPEX</title>
+  <title>github+hexo博客上传图片无法显示 - VANHOPEX</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -180,7 +180,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">Pytorch的FlexAttention接入Cutlass链路分析</span>
+            <span id="subtitle">github+hexo博客上传图片无法显示</span>
           
         </div>
 
@@ -191,8 +191,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-20 17:15" pubdate>
-          2026年5月20日 下午
+        <time datetime="2022-10-17 00:00" pubdate>
+          2022年10月17日 凌晨
         </time>
       </span>
     
@@ -203,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          125 字
+          323 字
         
       </span>
     
@@ -214,7 +214,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -252,16 +252,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Pytorch的FlexAttention接入Cutlass链路分析</h1>
+            <h1 style="display: none">github+hexo博客上传图片无法显示</h1>
             
             
               <div class="markdown-body">
                 
-                <p>本文为 <strong>Pytorch的FlexAttention接入Cutlass链路分析</strong> 的完整 HTML 交互版报告。</p>
-<p>为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开：</p>
-<p>👉 <strong><a href="/html-posts/Pytorch%E7%9A%84FlexAttention%E6%8E%A5%E5%85%A5Cutlass%E9%93%BE%E8%B7%AF%E5%88%86%E6%9E%90.html">在新窗口中打开完整报告</a></strong></p>
-<hr>
-<h3 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h3><iframe src="/html-posts/Pytorch的FlexAttention接入Cutlass链路分析.html" style="width: 100%; height: 900px; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></iframe>
+                <p>github+hexo博客上传图片无法显示</p><p><strong>解决方法：</strong></p><ol><li>用f12查看图片的链接，发现链接是带日期的，而<code>hexo new post &quot;xxx&quot;</code>创建的md文件都是直接放到_post里面了，所以需要修改默认生成md的位置到 <code>年/月/日/xx.md</code>里面</li></ol><p>​<img src="/articles/2022/10/17/how-to-upload-image-to-github-io/image.png" srcset="/img/loading.gif" lazyload></p><p>​所以将<code>_config.yml</code>中的<code>permalink</code>修改为： <code>permalink: &#39;articles/:year/:month/:day/:name/&#39;</code></p><ol start="2"><li><p>而且md插入图片的时候，不要加相对链接，直接写图片名字（虽然这样会导致本地的md文件不能现实图片）</p><p><img src="/articles/2022/10/17/how-to-upload-image-to-github-io/image-20221017165402267.png" srcset="/img/loading.gif" lazyload></p></li></ol><p><strong>参考链接：</strong></p><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_43401436/article/details/107191688">https://blog.csdn.net/m0_43401436/article/details/107191688</a></p>
 
                 
               </div>
@@ -280,7 +276,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/AI-Compiler/" class="category-chain-item">AI Compiler</a>
+  <a href="/categories/%E6%9D%82%E9%A1%B9/" class="category-chain-item">杂项</a>
   
   
 
@@ -295,13 +291,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/FlexAttention/">#FlexAttention</a>
-      
-        <a href="/tags/Cutlass/">#Cutlass</a>
-      
-        <a href="/tags/PyTorch/">#PyTorch</a>
-      
-        <a href="/tags/AI-Compiler/">#AI Compiler</a>
+        <a href="/tags/hexo/">#hexo</a>
       
     </div>
   
@@ -313,8 +303,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Pytorch的FlexAttention接入Cutlass链路分析</div>
-      <div>https://wanhaozhang.github.io/2026/05/20/Pytorch的FlexAttention接入Cutlass链路分析/</div>
+      <div>github+hexo博客上传图片无法显示</div>
+      <div>https://wanhaozhang.github.io/articles/2022/10/17/how-to-upload-image-to-github-io/</div>
     </div>
     <div class="license-meta">
       
@@ -326,7 +316,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月20日</div>
+          <div>2022年10月17日</div>
         </div>
       
       
@@ -358,21 +348,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/20/opencode-deepseek-v4-flash-free-evg-20260520_mermaid/" title="opencode-deepseek-v4-flash-free-evg-20260520_mermaid">
+                      <a href="/articles/2022/11/20/static-analysis-A1/" title="软件分析课程实验-A1-活跃变量分析和迭代求解器">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">opencode-deepseek-v4-flash-free-evg-20260520_mermaid</span>
+                        <span class="hidden-mobile">软件分析课程实验-A1-活跃变量分析和迭代求解器</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/" title="SR Policy学习">
-                        <span class="hidden-mobile">SR Policy学习</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

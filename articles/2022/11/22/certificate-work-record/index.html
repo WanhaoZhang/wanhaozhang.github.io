@@ -16,25 +16,22 @@
   <meta name="author" content="VANHOPEX">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文为 Pytorch的FlexAttention接入Cutlass链路分析 的完整 HTML 交互版报告。 为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开： 👉 在新窗口中打开完整报告  在线预览">
+    <meta name="description" content="Ubuntu搭建Nginx服务器step1 安装 Nginx12sudo apt updatesudo apt install nginxstep2 调整防火墙123sudo ufw app list # 查看状态sudo ufw allow &#x27;FULL&#x27;  # 调整防火墙，让他允许 Nginx的所有服务通过sudo ufw status # 查看更改结果step3 检查web">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Pytorch的FlexAttention接入Cutlass链路分析">
-<meta property="og:url" content="https://wanhaozhang.github.io/2026/05/20/Pytorch%E7%9A%84FlexAttention%E6%8E%A5%E5%85%A5Cutlass%E9%93%BE%E8%B7%AF%E5%88%86%E6%9E%90/index.html">
+<meta property="og:title" content="证书验证机制实验记录">
+<meta property="og:url" content="https://wanhaozhang.github.io/articles/2022/11/22/certificate-work-record/index.html">
 <meta property="og:site_name" content="VANHOPEX">
-<meta property="og:description" content="本文为 Pytorch的FlexAttention接入Cutlass链路分析 的完整 HTML 交互版报告。 为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开： 👉 在新窗口中打开完整报告  在线预览">
+<meta property="og:description" content="Ubuntu搭建Nginx服务器step1 安装 Nginx12sudo apt updatesudo apt install nginxstep2 调整防火墙123sudo ufw app list # 查看状态sudo ufw allow &#x27;FULL&#x27;  # 调整防火墙，让他允许 Nginx的所有服务通过sudo ufw status # 查看更改结果step3 检查web">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-05-20T09:15:00.000Z">
-<meta property="article:modified_time" content="2026-05-20T12:18:55.405Z">
+<meta property="article:published_time" content="2022-11-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-20T13:32:48.206Z">
 <meta property="article:author" content="VANHOPEX">
-<meta property="article:tag" content="FlexAttention">
-<meta property="article:tag" content="Cutlass">
-<meta property="article:tag" content="PyTorch">
-<meta property="article:tag" content="AI Compiler">
+<meta property="article:tag" content="证书机制">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Pytorch的FlexAttention接入Cutlass链路分析 - VANHOPEX</title>
+  <title>证书验证机制实验记录 - VANHOPEX</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -180,7 +177,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">Pytorch的FlexAttention接入Cutlass链路分析</span>
+            <span id="subtitle">证书验证机制实验记录</span>
           
         </div>
 
@@ -191,8 +188,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-05-20 17:15" pubdate>
-          2026年5月20日 下午
+        <time datetime="2022-11-22 00:00" pubdate>
+          2022年11月22日 凌晨
         </time>
       </span>
     
@@ -203,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          125 字
+          2.3k 字
         
       </span>
     
@@ -214,7 +211,7 @@
         
         
         
-          2 分钟
+          20 分钟
         
       </span>
     
@@ -252,16 +249,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Pytorch的FlexAttention接入Cutlass链路分析</h1>
+            <h1 style="display: none">证书验证机制实验记录</h1>
             
             
               <div class="markdown-body">
                 
-                <p>本文为 <strong>Pytorch的FlexAttention接入Cutlass链路分析</strong> 的完整 HTML 交互版报告。</p>
-<p>为了获得最佳的阅读和交互体验（包含复杂的 Sequence Diagram 和架构图），您可以点击以下链接在新窗口中打开：</p>
-<p>👉 <strong><a href="/html-posts/Pytorch%E7%9A%84FlexAttention%E6%8E%A5%E5%85%A5Cutlass%E9%93%BE%E8%B7%AF%E5%88%86%E6%9E%90.html">在新窗口中打开完整报告</a></strong></p>
-<hr>
-<h3 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h3><iframe src="/html-posts/Pytorch的FlexAttention接入Cutlass链路分析.html" style="width: 100%; height: 900px; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"></iframe>
+                <h2 id="Ubuntu搭建Nginx服务器"><a href="#Ubuntu搭建Nginx服务器" class="headerlink" title="Ubuntu搭建Nginx服务器"></a>Ubuntu搭建Nginx服务器</h2><h3 id="step1-安装-Nginx"><a href="#step1-安装-Nginx" class="headerlink" title="step1 安装 Nginx"></a>step1 安装 Nginx</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install nginx</span><br></pre></td></tr></table></figure><h3 id="step2-调整防火墙"><a href="#step2-调整防火墙" class="headerlink" title="step2 调整防火墙"></a>step2 调整防火墙</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo ufw app list # 查看状态</span><br><span class="line">sudo ufw allow &#x27;FULL&#x27;  # 调整防火墙，让他允许 Nginx的所有服务通过</span><br><span class="line">sudo ufw status # 查看更改结果</span><br></pre></td></tr></table></figure><h3 id="step3-检查web-服务器"><a href="#step3-检查web-服务器" class="headerlink" title="step3 检查web 服务器"></a>step3 检查web 服务器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl status nginx</span><br></pre></td></tr></table></figure><p>然后就可以使用浏览器输入 <a target="_blank" rel="noopener" href="http://your_ipaddress/">http://your_ipaddress</a> 来访问了</p><h3 id="Nginx常用命令"><a href="#Nginx常用命令" class="headerlink" title="Nginx常用命令"></a>Nginx常用命令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart nginx  # 重启</span><br><span class="line"></span><br><span class="line">sudo systemctl reload nginx # 修改了配置之后重新加载</span><br><span class="line"></span><br><span class="line">sudo systemctl disable nginx # 默认情况下，Nginx 会在服务器启动时，跟随系统启动，如果我们不想这样，我们可以用这个命令来禁止</span><br><span class="line"></span><br><span class="line">sudo systemctl enable nginx # 要重新让系统启动时引导 Nginx 启动</span><br></pre></td></tr></table></figure><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="https://kalacloud.com/blog/how-to-install-nginx-on-ubuntu-20-04/">https://kalacloud.com/blog/how-to-install-nginx-on-ubuntu-20-04/</a></p><p><a target="_blank" rel="noopener" href="https://developer.aliyun.com/article/759280">https://developer.aliyun.com/article/759280</a></p><h2 id="Nginx安装SSL配置HTTPS"><a href="#Nginx安装SSL配置HTTPS" class="headerlink" title="Nginx安装SSL配置HTTPS"></a>Nginx安装SSL配置HTTPS</h2><p>看下面文章的第一部分，注意在覆盖文件之前先备份，防止出错</p><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000022673232">nginx - Nginx 安装 SSL 配置 HTTPS 超详细完整全过程_个人文章 - SegmentFault 思否</a></p><h2 id="生成证书并部署到Nginx服务器"><a href="#生成证书并部署到Nginx服务器" class="headerlink" title="生成证书并部署到Nginx服务器"></a>生成证书并部署到Nginx服务器</h2><p>使用下面命令后会让输入一些 地区、公司名、机构名之类的信息，随便写即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//生成ca 私钥</span><br><span class="line">openssl genrsa  -out ca.key 2048 </span><br><span class="line"> </span><br><span class="line">//生成ca证书</span><br><span class="line">openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.crt</span><br><span class="line"> </span><br><span class="line">//生成server 私钥和证书请求文件</span><br><span class="line">openssl req -new -sha256 -nodes -out server.csr -newkey rsa:2048 -keyout server.key</span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 创建v3.ext文件</span><br><span class="line">vim v3.ext</span><br><span class="line"></span><br><span class="line">// 在v3.ext文件中写入内容，注意换成IP</span><br><span class="line">//</span><br><span class="line">    authorityKeyIdentifier = keyid, issuer</span><br><span class="line">    basicConstraints = CA:FALSE</span><br><span class="line">    keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment</span><br><span class="line">    subjectAltName = @alt_names</span><br><span class="line">    [alt_names]</span><br><span class="line">    DNS.1 = test.cn  //使用是ip 则使用IP.1=xxxx</span><br><span class="line">//</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//使用ca 签发server</span><br><span class="line">openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 3650 -sha256 -extfile v3.ext</span><br></pre></td></tr></table></figure><p>Nginx 配置，一般只需要修改生成证书的位置信息即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># HTTP_TO_HTTPS_END</span><br><span class="line">#ssl_password_file /etc/nginx/conf.d/openssl/global.pass;</span><br><span class="line">    ssl_certificate       /etc/nginx/conf.d/openssl/server.crt; # 只需要改这里</span><br><span class="line">    ssl_certificate_key   /etc/nginx/conf.d/openssl/server.key; # 只需要改这里</span><br><span class="line">    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;</span><br><span class="line">    ssl_prefer_server_ciphers on;</span><br><span class="line">    ssl_session_cache shared:SSL:10m;</span><br><span class="line">    ssl_session_timeout 10m;</span><br><span class="line">    error_page 497  https://$host$request_uri;</span><br><span class="line"># SSL-END</span><br></pre></td></tr></table></figure><p><mark>目前，<code>203.91.121.226</code>服务器上，证书生成的位置在<code>/etc/ssl/private/下面，nginx的配置文件可以通过</code>sudo nginx -t<code>进行查看，目前在</code> &#x2F;usr&#x2F;local&#x2F;nginx&#x2F;conf&#x2F;nginx.conf&#96;中 </mark></p><p>每次<strong>修改完了nginx配置文件</strong></p><ul><li>使用 <code>nginx -t</code> 检查文件是否没问题</li><li>使用<code>nginx -s  reload</code> 重新加载配置文件</li></ul><h3 id="参考-1"><a href="#参考-1" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/LCRxxoo/article/details/120674063">https://blog.csdn.net/LCRxxoo/article/details/120674063</a> 【这篇最有效果】</p><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hukey/p/16306560.html">OpenSSL自签发CA证书chrome浏览器安全访问 - hukey - 博客园 (cnblogs.com)</a></p><h2 id="将根证书导入到浏览器中使其信任"><a href="#将根证书导入到浏览器中使其信任" class="headerlink" title="将根证书导入到浏览器中使其信任"></a>将根证书导入到浏览器中使其信任</h2><p>将上诉步骤生成的ca.crt导入浏览器即可</p><h3 id="参考-2"><a href="#参考-2" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/hukey/p/16306560.html">OpenSSL自签发CA证书chrome浏览器安全访问 - hukey - 博客园 (cnblogs.com)</a></p><h2 id="使用hosts把自定义域名映射到本地"><a href="#使用hosts把自定义域名映射到本地" class="headerlink" title="使用hosts把自定义域名映射到本地"></a>使用hosts把自定义域名映射到本地</h2><p>Windows开发环境下，打开C:\Windows\System32\drivers\etc目录下的hosts文件。添加<code>127.0.0.1 jd.com</code>，完成IP地址（127.0.0.1）和域名（jd.com）映射的配置。如果修改后无法保存，请获得管理员权限后重试。</p><h3 id="参考-3"><a href="#参考-3" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/307d9f91eede">https://www.jianshu.com/p/307d9f91eede</a></p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2>
 
                 
               </div>
@@ -280,7 +273,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/AI-Compiler/" class="category-chain-item">AI Compiler</a>
+  <a href="/categories/%E6%9D%82%E9%A1%B9/" class="category-chain-item">杂项</a>
   
   
 
@@ -295,13 +288,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/FlexAttention/">#FlexAttention</a>
-      
-        <a href="/tags/Cutlass/">#Cutlass</a>
-      
-        <a href="/tags/PyTorch/">#PyTorch</a>
-      
-        <a href="/tags/AI-Compiler/">#AI Compiler</a>
+        <a href="/tags/%E8%AF%81%E4%B9%A6%E6%9C%BA%E5%88%B6/">#证书机制</a>
       
     </div>
   
@@ -313,8 +300,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Pytorch的FlexAttention接入Cutlass链路分析</div>
-      <div>https://wanhaozhang.github.io/2026/05/20/Pytorch的FlexAttention接入Cutlass链路分析/</div>
+      <div>证书验证机制实验记录</div>
+      <div>https://wanhaozhang.github.io/articles/2022/11/22/certificate-work-record/</div>
     </div>
     <div class="license-meta">
       
@@ -326,7 +313,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2026年5月20日</div>
+          <div>2022年11月22日</div>
         </div>
       
       
@@ -358,9 +345,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2026/05/20/opencode-deepseek-v4-flash-free-evg-20260520_mermaid/" title="opencode-deepseek-v4-flash-free-evg-20260520_mermaid">
+                      <a href="/articles/2023/10/15/%E6%97%A5%E5%BF%97%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93/" title="日志异常检测论文总结">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">opencode-deepseek-v4-flash-free-evg-20260520_mermaid</span>
+                        <span class="hidden-mobile">日志异常检测论文总结</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -368,8 +355,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/articles/2025/09/16/SR%20Policy%E5%AD%A6%E4%B9%A0/" title="SR Policy学习">
-                        <span class="hidden-mobile">SR Policy学习</span>
+                      <a href="/articles/2022/11/20/static-analysis-A1/" title="软件分析课程实验-A1-活跃变量分析和迭代求解器">
+                        <span class="hidden-mobile">软件分析课程实验-A1-活跃变量分析和迭代求解器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
