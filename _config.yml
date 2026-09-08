@@ -1,0 +1,106 @@
+remote_theme: academicpages/academicpages.github.io
+
+locale: "zh-CN"
+site_theme: "default"
+title: "张万豪 | Wanhao Zhang"
+title_separator: "-"
+name: &name "张万豪"
+description: &description "张万豪的个人学术主页"
+url: "https://wanhaozhang.github.io"
+baseurl: ""
+repository: "WanhaoZhang/wanhaozhang.github.io"
+
+author:
+  avatar: "profile.jpg"
+  name: "张万豪"
+  bio: "AI 研究与开发；研究方向包括大语言模型、网络自动化运维与日志异常检测。"
+  location: "北京，中国"
+  employer: "清华大学"
+  email: "wzhangt@gmail.com"
+  googlescholar: "https://scholar.google.com/citations?user=bGVQ_RcAAAAJ"
+  github: "WanhaoZhang"
+  linkedin: "wanhaozhang"
+
+publication_category:
+  conferences:
+    title: "Conference Papers"
+
+breadcrumbs: false
+read_more: "disabled"
+talkmap_link: false
+comments:
+  provider:
+atom_feed:
+  hide: true
+
+include:
+  - _pages
+  - files
+
+exclude:
+  - tmp
+  - rendercv_resume
+  - 张万豪-简历.pdf
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
