@@ -13,9 +13,9 @@ repository: "WanhaoZhang/wanhaozhang.github.io"
 author:
   avatar: "profile.jpg"
   name: "张万豪"
-  bio: "AI 研究与开发；研究方向包括大语言模型、网络自动化运维与日志异常检测。"
+  bio: "大语言模型、智能运维与日志异常检测"
   location: "北京，中国"
-  employer: "清华大学"
+  employer:
   email: "wzhangt@gmail.com"
   googlescholar: "https://scholar.google.com/citations?user=bGVQ_RcAAAAJ"
   github: "WanhaoZhang"
