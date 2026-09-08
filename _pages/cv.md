@@ -22,9 +22,10 @@ redirect_from:
   {% include archive-single-cv.html %}
 {% endfor %}
 
-实习与研究经历
+工作、实习与研究经历
 ======
 
+- **AI Infrastructure / 大模型系统**，2025.07 - 至今；PyTorch 编译栈、推理框架、MoE / EP、通信计算融合与 NPU 算子优化
 - **国际农业发展基金会（IFAD）ICT AI Team**，Research & Development Intern，2025.01 - 2025.04
 - **腾讯视频 AI 技术中心**，AI 研发实习生，2024.05 - 2024.09
 - **华为 2012 实验室**，算法研发实习生，2023.07 - 2024.05
@@ -34,9 +35,10 @@ redirect_from:
 技能
 ======
 
-- 编程语言：Java、Python、Go、SQL、C、C++
-- AI 与数据：PyTorch、LangChain、LLM、RAG、机器学习、深度学习、自然语言处理
-- 系统：微服务、ONNX、静态程序分析、日志分析与智能运维
+- 编程语言：Python、C / C++、Go、Java、SQL
+- AI Infra：PyTorch、torch.compile、Dynamo / FX、Inductor、vLLM、SGLang、MoE / Expert Parallelism
+- 系统与性能：通信计算融合、高性能算子、NPU 软件栈、模型服务、ONNX、性能分析
+- AI 与数据：LLM、RAG、机器学习、自然语言处理、日志分析与智能运维
 - 语言：英语六级 580 分，具备英文技术阅读、交流与汇报能力
 
 荣誉奖项
