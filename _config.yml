@@ -11,7 +11,7 @@ baseurl: ""
 repository: "WanhaoZhang/wanhaozhang.github.io"
 
 author:
-  avatar: "profile.jpg"
+  avatar: "anime-avatar.png"
   name: "张万豪"
   bio: "AI Infra · LLM Systems · ML Compilers"
   location: "北京，中国"
@@ -35,10 +35,12 @@ atom_feed:
 
 include:
   - _pages
-  - files
 
 exclude:
   - tmp
+  - files
+  - output
+  - images/profile.jpg
   - rendercv_resume
   - 张万豪-简历.pdf
   - README.md

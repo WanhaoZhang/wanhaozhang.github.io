@@ -7,8 +7,6 @@ redirect_from:
   - /resume/
 ---
 
-[下载完整 PDF 简历](/files/张万豪-简历.pdf){: .btn .btn--primary }
-
 教育背景
 ======
 
