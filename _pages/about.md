@@ -11,7 +11,7 @@ redirect_from:
   - /publications/
 ---
 
-你好！我是张万豪，目前的工作与技术兴趣聚焦于 **AI Infrastructure**，关注大模型训练与推理系统、机器学习编译器和高性能算子。我主要围绕 PyTorch 编译栈、vLLM / SGLang、MoE / Expert Parallelism、通信计算融合与 NPU 算子优化开展工作，希望打通从模型前端、编译器 lowering、运行时到硬件内核的完整链路，让大模型在加速器上运行得更高效、更易用。
+你好！我是张万豪，目前的工作聚焦于 **大模型系统与高性能计算（AI Infrastructure）**，主要围绕昇腾 NPU 上的 MoE 推理、通信计算融合算子和 PyTorch 编译后端开展开发与性能优化。我关注从模型与推理框架到分布式运行时、编译器和设备内核的完整执行路径，通过算子实现、框架集成和可复现的整网评测，提升大模型推理的效率与稳定性。
 
 我于 2025 年获得清华大学网络空间安全专业硕士学位，2022 年获得北京航空航天大学计算机科学与技术专业学士学位。此前在智能运维、生成式 AI、模型服务与异构硬件迁移等方向积累了从算法研究到系统落地的经验，这些经历也逐步将我的关注点引向 AI Infra。邮箱：[wzhangt@gmail.com](mailto:wzhangt@gmail.com)。
 
@@ -23,7 +23,7 @@ redirect_from:
 
 # News
 
-- **2025.07 - 至今** 工作与技术方向聚焦 AI Infra、大模型推理系统和加速器软件栈。
+- **2025.07 - 至今** 开展昇腾 NPU 上的 MoE 通信计算融合算子开发、推理框架集成与整网性能优化。
 - **2025.04** 完成在国际农业发展基金会（IFAD）ICT AI Team 的研发实习。
 - **2024.10** LogRAG 被 IEEE ISSRE 2024 Research Track 接收。
 - **2024.09** 完成在腾讯视频 AI 技术中心的研发实习。
@@ -61,10 +61,12 @@ Yeqing Meng, Qianli Zhang, Xiangyu Tang, **Wanhao Zhang**, Jilong Wang<br>
 
 # Experience
 
-### 1. AI Infrastructure / 大模型系统（2025.07 - 至今）
+### 1. AI Infrastructure / 大模型系统与高性能算子（2025.07 - 至今）
 
-- 围绕 PyTorch 编译栈和加速器后端，推进算子从前端接口、计算图捕获与编译器 lowering，到运行时及设备内核的端到端接入。
-- 面向 MoE 大模型推理，关注 Expert Parallelism、通信计算融合与高性能算子，并在 vLLM / SGLang 等推理框架中开展集成、正确性验证和性能分析。
+- **MoE 与通信计算融合：** 面向昇腾 NPU，开发与优化 CatCCOS MegaMoE 的 Dispatch–FFN–Combine 融合算子，推进跨代硬件适配、矩阵与向量计算流水、片上数据复用和 MXFP8 量化，减少中间数据搬运与通信开销。
+- **推理框架集成：** 将融合算子接入 vLLM-Ascend，处理专家并行、权重与量化布局、运行时状态、容量限制及回退策略，并开展 SGLang 推理路径适配与对照实验。
+- **编译器与算子接口：** 围绕 FlexAttention 和 Matmul–ReduceScatter，开展 torch_npu、CATLASS 与 CatCCOS 对接，设计 PyTorch 算子接口、Fake/Meta、Dynamo/FX 抓图与 Inductor lowering，探索可编译的 NPU 算子调用与模板代码生成。
+- **整网验证与性能分析：** 覆盖单算子、真实 MoE 层输入和整网服务，使用 profiling、逐层数值对比与 AISBench/GSM8K A/B 评测，定位通信、数据拷贝和跨核同步瓶颈，验证不同负载下的精度、吞吐与稳定性。
 
 ### 2. 国际农业发展基金会 IFAD，ICT AI Team（2025.01 - 2025.04）
 
