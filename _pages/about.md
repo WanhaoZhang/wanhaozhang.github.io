@@ -5,6 +5,10 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
+  - /cv/
+  - /resume/
+  - /experience/
+  - /publications/
 ---
 
 你好！我是张万豪，目前的工作与技术兴趣聚焦于 **AI Infrastructure**，关注大模型训练与推理系统、机器学习编译器和高性能算子。我主要围绕 PyTorch 编译栈、vLLM / SGLang、MoE / Expert Parallelism、通信计算融合与 NPU 算子优化开展工作，希望打通从模型前端、编译器 lowering、运行时到硬件内核的完整链路，让大模型在加速器上运行得更高效、更易用。
